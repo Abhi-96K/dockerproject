@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "8f39b1a0-4572-4d2b-9289-53e3fa2990bc",
+		"name": "Spring Boot Docker REST API Practical",
+		"description": "Collection to test Spring Boot REST API deployed via Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. GET Hello Endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. GET Greet User (with Query Param)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/greet?name=PostmanUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"greet"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "PostmanUser"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. GET Application & Architecture Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. POST Echo JSON Payload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Student\",\n    \"message\": \"Testing Spring Boot Dockerized REST API with Postman\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/echo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

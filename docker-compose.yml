@@ -1,0 +1,11 @@
+
+services:
+  springboot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: springboot-docker-restapi:1.0.0
+    container_name: springboot-rest-app
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
