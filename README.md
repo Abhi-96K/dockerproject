@@ -100,3 +100,6 @@ docker logs -f springboot-rest-app
 - **Start Container**: `docker start springboot-rest-app`
 - **Remove Container**: `docker rm -f springboot-rest-app`
 - **Inspect Images**: `docker images`
+
+
+-- **Ispect Imagess**: `docker image`
