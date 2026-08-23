@@ -23,4 +23,5 @@ EXPOSE 8080
 # Execute the Spring Boot JAR
 ENTRYPOINT ["java", "-jar", "app.jar"]
 #why i'm using java
+#let's try it in different way i mean using python
 
